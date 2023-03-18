@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>ayo</title>
+<style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+</style>
+</head>
+<body>
+<p>"Muslim er ek joban"
+    <br> Sir apnar amader treat daowar kotha!
+</p>
+<img src="https://media.tenor.com/R8pTrV79WGAAAAAd/zakir-naik-muslim.gif">
+</body>
+<title>Botões</title>
+<style>
+#botao1 {
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+<button id="botao1">Hae Chol jai!</button>
+<button id="botao2">Parbo na,shor!</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 80;
+button2.addEventListener('mouseover', function() {
+  if(left == 80){
+    left = 84;
+  }else{
+    left = 80;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('REZA SIR SHERA!');
+});
+</script>
+</body>
+</html>
